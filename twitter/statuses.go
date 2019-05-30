@@ -48,6 +48,7 @@ type Tweet struct {
 	QuotedStatusID       int64                  `json:"quoted_status_id"`
 	QuotedStatusIDStr    string                 `json:"quoted_status_id_str"`
 	QuotedStatus         *Tweet                 `json:"quoted_status"`
+	Sentiment            float64                `json:"sentiment"`
 }
 
 // CreatedAtTime returns the time a tweet was created.
